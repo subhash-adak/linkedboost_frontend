@@ -18,7 +18,7 @@
 // //     }
 // //     const verify = async () => {
 // //       try {
-// //         const res = await fetch(`http://localhost:8000/verify-email?token=${encodeURIComponent(token)}`);
+// //         const res = await fetch(`https://linkedboost-backend.onrender.com/verify-email?token=${encodeURIComponent(token)}`);
 // //         const data = await res.json();
 // //         if (!res.ok) {
 // //           setStatus("error");
@@ -92,7 +92,7 @@
 
 //     const verify = async () => {
 //       try {
-//         const res = await fetch(`http://localhost:8000/verify-email?token=${encodeURIComponent(token)}`);
+//         const res = await fetch(`https://linkedboost-backend.onrender.com/verify-email?token=${encodeURIComponent(token)}`);
 //         const data = await res.json();
 
 //         if (!res.ok) {
@@ -174,7 +174,7 @@ function VerifyEmailContent() {
 
   const verify = async () => {
     try {
-      const res = await fetch(`http://localhost:8000/verify-email?token=${encodeURIComponent(token)}`);
+      const res = await fetch(`https://linkedboost-backend.onrender.com/verify-email?token=${encodeURIComponent(token)}`);
       const data = await res.json();
 
       if (!res.ok) {

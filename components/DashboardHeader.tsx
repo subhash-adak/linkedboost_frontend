@@ -9,7 +9,7 @@ export default function DashboardHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const handleLogout = async () => {
     try {
-      await fetch(`http://localhost:8000/logout`, {
+      await fetch(`https://linkedboost-backend.onrender.com/logout`, {
         method: "POST",
       });
     } catch (e) {

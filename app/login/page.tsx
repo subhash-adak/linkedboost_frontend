@@ -38,7 +38,7 @@
 //     setError("");
 //     setLoading(true);
 //     try {
-//       const res = await fetch("http://localhost:8000/login", {
+//       const res = await fetch("https://linkedboost-backend.onrender.com/login", {
 //         method: "POST",
 //         headers: { "Content-Type": "application/json" },
 //         body: JSON.stringify({ email, password }),
@@ -328,7 +328,7 @@ export default function LoginPage() {
   //   setSuccess("");
     
   //   try {
-  //     const res = await fetch("http://localhost:8000/google-auth", {
+  //     const res = await fetch("https://linkedboost-backend.onrender.com/google-auth", {
   //       method: "POST",
   //       headers: { "Content-Type": "application/json" },
   //       body: JSON.stringify({ id_token: response.credential })
@@ -356,7 +356,7 @@ export default function LoginPage() {
     
     try {
       // Use google-login endpoint instead of google-auth for login page
-      const res = await fetch("http://localhost:8000/google-login", {
+      const res = await fetch("https://linkedboost-backend.onrender.com/google-login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id_token: response.credential })
@@ -441,7 +441,7 @@ export default function LoginPage() {
     setSuccess("");
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8000/login", {
+      const res = await fetch("https://linkedboost-backend.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

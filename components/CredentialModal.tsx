@@ -130,7 +130,7 @@ export default function CredentialModal() {
       setLoading(true);
       setError("");
 
-      const res = await fetch("http://localhost:8000/store-encrypted-credentials", {
+      const res = await fetch("https://linkedboost-backend.onrender.com/store-encrypted-credentials", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

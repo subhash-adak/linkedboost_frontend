@@ -67,7 +67,7 @@
 //   setLoading(true);
 
 //  try {
-//   const res = await fetch("http://localhost:8000/register", {
+//   const res = await fetch("https://linkedboost-backend.onrender.com/register", {
 //     method: "POST",
 //     headers: { "Content-Type": "application/json" },
 //     body: JSON.stringify({
@@ -109,7 +109,7 @@
 
 //   try {
 //   setLoading(true);
-//   const res = await fetch("http://localhost:8000/resend-verification", {
+//   const res = await fetch("https://linkedboost-backend.onrender.com/resend-verification", {
 //     method: "POST",
 //     headers: { "Content-Type": "application/json" },
 //     body: JSON.stringify({ email }),
@@ -730,7 +730,7 @@ export default function RegisterPage() {
   //   setSuccess("");
     
   //   try {
-  //     const res = await fetch("http://localhost:8000/google-auth", {
+  //     const res = await fetch("https://linkedboost-backend.onrender.com/google-auth", {
   //       method: "POST",
   //       headers: { "Content-Type": "application/json" },
   //       body: JSON.stringify({ id_token: response.credential })
@@ -758,7 +758,7 @@ export default function RegisterPage() {
     setSuccess("");
     
     try {
-      const res = await fetch("http://localhost:8000/google-auth", {
+      const res = await fetch("https://linkedboost-backend.onrender.com/google-auth", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id_token: response.credential })
@@ -809,7 +809,7 @@ export default function RegisterPage() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:8000/register", {
+      const res = await fetch("https://linkedboost-backend.onrender.com/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -846,7 +846,7 @@ export default function RegisterPage() {
 
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:8000/resend-verification", {
+      const res = await fetch("https://linkedboost-backend.onrender.com/resend-verification", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),

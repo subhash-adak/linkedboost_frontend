@@ -84,7 +84,7 @@ const handleRequest = async () => {
     return;
   }
 
-  const res = await fetch("http://localhost:8000/forgot-password", {
+  const res = await fetch("https://linkedboost-backend.onrender.com/forgot-password", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -122,7 +122,7 @@ const handleResendOTP = async () => {
     setLoading(true);
     setError("");
 
-    const res = await fetch("http://localhost:8000/resend-otp", {
+    const res = await fetch("https://linkedboost-backend.onrender.com/resend-otp", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(email) // Send email as string directly, not as an object
@@ -156,7 +156,7 @@ const handleReset = async () => {
   setMessage("");
   setLoading(true);
 
-  const res = await fetch("http://localhost:8000/reset-password", {
+  const res = await fetch("https://linkedboost-backend.onrender.com/reset-password", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
