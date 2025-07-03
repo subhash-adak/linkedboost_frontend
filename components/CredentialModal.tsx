@@ -91,7 +91,7 @@ export default function CredentialModal() {
 
   const checkEncryptionStatus = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/check-encrypted-credentials", {
+      const res = await fetch("https://linkedboost-backend.onrender.com/check-encrypted-credentials", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
